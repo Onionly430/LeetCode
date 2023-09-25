@@ -1,0 +1,6 @@
+class Solution:
+    def maximumWealth(self, accounts: List[List[int]]) -> int:
+        customer_sum = []
+        for row in accounts:
+            customer_sum.append(sum(row))
+        return max(customer_sum)
